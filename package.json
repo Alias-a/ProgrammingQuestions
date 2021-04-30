@@ -2,16 +2,28 @@
   "name": "programmingquestions",
   "version": "1.0.0",
   "description": "",
-  "main": "code/programming_questions.js",
+  "main": "src/ProgrammingQuestions.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Justin Gregorio",
   "license": "ISC",
-  "dependencies": {
+  "jest": {
+    "verbose": true,
+    "testMatch": [
+      "**/test/*.js"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.0",
+    "babel-jest": "^26.6.3",
     "jest": "^26.6.3"
   }
 }
