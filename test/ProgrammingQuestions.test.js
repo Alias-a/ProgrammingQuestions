@@ -6,4 +6,13 @@ describe('isPalindrome', () => {
         expect(result).toBe(true);
     })
 
+    it('should return false when passed a non palindrome', () => {
+        const result = ProgrammingQuestions.isPalindrome('thing');
+        expect(result).toBe(false);
+    })
+
+    it('should return false when passed an empty string', () => {
+        const result = ProgrammingQuestions.isPalindrome('');
+        expect(result).toBe(true);
+    })
 })
